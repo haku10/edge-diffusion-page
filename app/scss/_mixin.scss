@@ -1,0 +1,8 @@
+@import 'const';
+
+// メディアクエリの指定
+@mixin mediaQuery($breakPoint: md) {
+  @media #{map-get($breakPoints, $breakPoint)} {
+    @content;
+  }
+}
