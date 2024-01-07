@@ -1,0 +1,6 @@
+.customBackground {
+    background: linear-gradient(90deg, #CCD3D4 23.34%, #CBE1E5 39.99%, #CDCDCD 84.08%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
