@@ -1,0 +1,51 @@
+.aboutCompany {
+    width: 684px;
+    height: 554px;
+    flex-shrink: 0;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 200%;
+}
+
+.tableContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.aboutCompanyRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.itemKey {
+    border-bottom: solid 1px #ccc;
+    padding: 8px 0;
+    margin-left: 16px;
+    width: 100%;
+    height: 76px;
+}
+
+.itemKey:last-child {
+    height: 210px;
+}
+
+.itemValue {
+    border-bottom: solid 1px #ccc;
+    padding: 8px 0;
+    width: 100%;
+    height: 76px;
+}
+
+.itemValue:last-child {
+    height: 210px;
+}
