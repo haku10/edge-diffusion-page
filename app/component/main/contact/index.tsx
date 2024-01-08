@@ -62,10 +62,16 @@ export const Contact = () => {
                   className="flex-grow p-2 bg-transparent border border-gray-300"
                 ></textarea>
               </div>
+              <div className="flex justify-center items-center">
+                <div className="flex items-center">
+                  <input type="checkbox" id="checkbox" className="mr-2" />
+                  <label htmlFor="checkbox">プライバシーポリシーに同意</label>
+                </div>
+              </div>
               <div className="flex justify-center">
                 <button
                   type="submit"
-                  className="px-8 py-2 border border-white hover:bg-white hover:text-black mt-4 mx-auto"
+                  className="font-bold py-4 px-16 border border-white bg-black text-white mt-4 mx-auto rounded-custom"
                 >
                   確認する
                 </button>

@@ -1,3 +1,11 @@
+.WebDevelopment {
+    font-size: 64px;
+    color: #FFF;
+    text-align: center;
+    font-weight: 300;
+    line-height: normal;
+}
+
 .service {
     flex-shrink: 0;
     display: flex;
