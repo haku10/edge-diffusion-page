@@ -7,3 +7,9 @@
     max-width: 800px;
     margin: auto;
 }
+
+.part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

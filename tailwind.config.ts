@@ -10,6 +10,9 @@ const config: Config = {
     extend: {
       spacing: {
         '22': '88px',
+        '105': '420px',
+        '112': '448px',
+        '130': '520px',
       },
       textColor: {
         DEFAULT: '#000',
