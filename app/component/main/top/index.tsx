@@ -10,17 +10,17 @@ export const Top = () => {
           <Image src="/company-logo.svg" alt="company-logo" width={201} height={84} />
         </div>
         {/* ボタンコンテナ */}
-        <div className="flex gap-22 mr-16">
-          <button className="hover:bg-blue-700 text-second-black font-bold py-2 px-4 rounded">
+        <div className="flex gap-0.5 mr-4">
+          <button className="hover:bg-black hover:text-white hover:rounded-custom font-bold py-6 px-16 rounded">
             MISSION
           </button>
-          <button className="hover:bg-blue-700 hover:text-white font-bold py-2 px-4 rounded">
+          <button className="hover:bg-black hover:text-white hover:rounded-custom font-bold py-6 px-16 rounded">
             SERVICE
           </button>
-          <button className="hover:bg-blue-700 hover:text-white font-bold py-2 px-4 rounded">
+          <button className="hover:bg-black hover:text-white hover:rounded-custom font-bold py-6 px-16 rounded">
             COMPANY
           </button>
-          <button className="hover:bg-blue-700 hover:text-white font-bold py-2 px-4 rounded">
+          <button className="hover:bg-black hover:text-white hover:rounded-custom font-bold py-6 px-16 rounded">
             お問い合わせ
           </button>
         </div>

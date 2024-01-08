@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      borderRadius: {
+        'custom': '100px'
+      },
       spacing: {
         '22': '88px',
         '105': '420px',
