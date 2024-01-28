@@ -1,8 +1,13 @@
 .mission {
-    width: 684px;
-    height: 554px;
     flex-shrink: 0;
     font-size: 18px;
     font-style: normal;
     line-height: 200%;
+}
+
+@media (min-width: 768px) {
+    .mission {
+        width: 684px;
+        height: 554px;
+    }
 }

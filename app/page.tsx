@@ -18,7 +18,9 @@ export default function Main() {
         <Contact />
       </main>
       <Footer />
-      <ScrollButton />
+      <div className="spHidden">
+        <ScrollButton />
+      </div>
     </>
   );
 }

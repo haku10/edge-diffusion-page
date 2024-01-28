@@ -11,7 +11,7 @@ export const Top = () => {
             <Image src="/company-logo.svg" alt="company-logo" width={201} height={84} />
           </div>
           {/* ボタンコンテナ */}
-          <div className="flex gap-0.5 mr-4">
+          <div className="spHidden md:flex md:gap-0.5 md:mr-4">
             <button className="hover:bg-black hover:text-white hover:rounded-custom font-bold py-6 px-16 rounded">
               MISSION
             </button>
@@ -27,11 +27,13 @@ export const Top = () => {
           </div>
         </div>
         <div className="mt-16 px-16">
-          <div className="flex items-center">
-            <span className="text-title font-semibold">CONSULTING</span>
+          <div className="md:flex md:items-center">
+            <span className="md:text-title font-semibold">CONSULTING</span>
             <span className="ml-8">小さく始める、コンサルティングとWEB開発</span>
           </div>
-          <div className={`${styles.webDevelopment} text-title font-semibold`}>WEB DEVELOPMENT</div>
+          <div className={`${styles.webDevelopment} md:text-title md:font-semibold`}>
+            WEB DEVELOPMENT
+          </div>
         </div>
         <div className="mt-16 text-center">
           <div className={styles.thought}>

@@ -3,7 +3,8 @@ import styles from "./style.module.css";
 export const Company = () => {
   return (
     <>
-      <div className="">
+      {/** TODO のちほどSPで表示されるようにする */}
+      <div className="spHidden">
         <h2 className="text-title text-center">COMPANY</h2>
         <div className="flex justify-center items-start my-8 md:px-36">
           {/* 顔写真 */}

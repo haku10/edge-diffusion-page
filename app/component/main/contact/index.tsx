@@ -3,7 +3,8 @@ import styles from "./style.module.css";
 export const Contact = () => {
   return (
     <>
-      <div>
+      {/** TODO のちほどSPで表示されるようにする */}
+      <div className="spHidden">
         <h2 className={`${styles.customBackground} text-title text-center`}>CONTACT</h2>
         <div className={`${styles.tableContainer}`}>
           <div className="mt-16 w-full">
