@@ -21,29 +21,57 @@ export const Service = () => {
           テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
         </div>
         <div className="mb-105">
-          <div className={`${styles.part} md:flex md:justify-center md:items-center md:space-x-4`}>
+          {/** PCサイズの場合に表示 */}
+          <div className="spHidden">
             <div
-              className={`${styles.WebDevelopment} ${
-                selectedService === "WebDevelopment" ? "text-white" : "text-red-500"
-              }`}
+              className={`${styles.part} md:flex md:justify-center md:items-center md:space-x-4`}
+            >
+              <div
+                className={`${styles.WebDevelopment} ${
+                  selectedService === "WebDevelopment" ? "text-white" : "text-gray-600"
+                }`}
+                onClick={() => handleSelectService("WebDevelopment")}
+              >
+                <div>Web Development /</div>
+                <div className="text-lg text-left -mt-3">Web開発</div>
+              </div>
+              <div
+                className={`mr-4 ${styles.Consulting} ${
+                  selectedService === "Consulting" ? "text-white" : "text-gray-600"
+                }`}
+                onClick={() => handleSelectService("Consulting")}
+              >
+                <div>Consulting /</div>
+                <div className="text-lg text-left -mt-3">コンサルティング</div>
+              </div>
+            </div>
+            <div className="mt-3">
+              {/* 条件付きレンダリング */}
+              {selectedService === "WebDevelopment" && <WebDevelopment />}
+              {selectedService === "Consulting" && <Consulting />}
+            </div>
+          </div>
+          {/** SPサイズの場合に表示 */}
+          <div className="pcHidden mt-3">
+            {/* 条件付きレンダリング */}
+            <div
+              className={`text-white ${styles.WebDevelopment}`}
               onClick={() => handleSelectService("WebDevelopment")}
             >
-              Web Development /
+              <div>Web Development /</div>
+              <div className="text-lg text-left -mt-3">Web開発</div>
             </div>
+            <WebDevelopment />
             <div
-              className={`mr-4 ${styles.Consulting} ${
-                selectedService === "Consulting" ? "text-white" : "text-red-500"
-              }`}
+              className={`text-white ${styles.Consulting}`}
               onClick={() => handleSelectService("Consulting")}
             >
-              Consulting /
+              <div>Consulting /</div>
+              <div className="text-lg text-left -mt-3">コンサルティング</div>
             </div>
+            <Consulting />
           </div>
-          <div className="">
-            {/* 条件付きレンダリング */}
-            {selectedService === "WebDevelopment" && <WebDevelopment />}
-            {selectedService === "Consulting" && <Consulting />}
-          </div>
+          {/** TODO のちほどSPで表示されるようにする */}
           <div className="spHidden">
             <div className="absolute h-[516px] w-[664px] md:z-10 md:mt-[-40px] md:ml-[-128px]">
               <Image
