@@ -4,7 +4,7 @@ export const Mission = () => {
   return (
     <>
       <div className="px-16">
-        <h2 className="text-title">MISSION</h2>
+        <h2 className="md:text-title">MISSION</h2>
         <div className={`${styles.mission}`}>
           <p>
             様々なITサービスが浸透してきている中で、日本経済を支えている中小企業の中には、思うようにIT化が進められていない企業がまだ数多く存在します。世界的なパンデミックや急激な技術革新など、絶えず変化していく世の中で、変化に対応できず世の中から消えてしまう事業やサービスが後を絶ちません。

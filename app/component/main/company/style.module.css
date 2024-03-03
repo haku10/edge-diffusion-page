@@ -1,10 +1,7 @@
 .aboutCompany {
-    width: 684px;
-    height: 554px;
-    flex-shrink: 0;
-    font-size: 18px;
+    font-size: 26px;
     font-style: normal;
-    line-height: 200%;
+    font-weight: 500;
 }
 
 .tableContainer {
@@ -15,6 +12,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 276px;
+    margin-top:  73.5px;
   }
 
 .aboutCompanyRow {
@@ -36,6 +34,20 @@
     height: 76px;
 }
 
+.itemAddressKey {
+    border-bottom: solid 1px #ccc;
+    padding: 8px 0;
+    margin-left: 16px;
+    width: 100%;
+    height: 95px;
+}
+
+
+
+.itemKey:first-child {
+    border-top: solid 1px #ccc;
+}
+
 .itemKey:last-child {
     height: 210px;
 }
@@ -45,6 +57,17 @@
     padding: 8px 0;
     width: 100%;
     height: 76px;
+}
+
+.itemAddressValue {
+    border-bottom: solid 1px #ccc;
+    padding: 8px 0;
+    width: 100%;
+    height: 95px;
+}
+
+.itemValue:first-child {
+    border-top: solid 1px #ccc;
 }
 
 .itemValue:last-child {
