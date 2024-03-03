@@ -1,6 +1,12 @@
 .WebDevelopment {
     font-size: 64px;
-    color: #FFF;
+    text-align: center;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.Consulting {
+    font-size: 64px;
     text-align: center;
     font-weight: 300;
     line-height: normal;
@@ -16,8 +22,10 @@
     margin: auto;
 }
 
+@media (min-width: 768px) {
 .part {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+}
